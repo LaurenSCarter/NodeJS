@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        {{>head_common_attributes}}
+    </head>
+    <body>
+        <!--old style static heading-->
+        <!--
+        <h1>From a dynamic hbs view</h1>
+        -->
+
+        <!--injected data (coming from the 3-app... file
+        render object (around line 24-->
+        <div class = "main-content">
+            {{>header}}
+            <p>Use this site to get your weather.</p>
+            <form>
+                <input placeholder="Loaction">
+                <button>Search</button>
+            </form>
+
+            <p id="message-one"></p>
+            <p id="message-two"></p>
+
+        </div>
+        {{>footer}}
+        <script src="/js/app.js"></script>
+    </body>
+</html>
